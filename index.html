@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Information System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-city"></i>
+            Smart City
+        </div>
+
+        <input type="checkbox" id="check">
+
+        <label for="check" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul>
+
+            <li><a class="active" href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+<div class="slider">
+
+<img id="slide" src="https://tse3.mm.bing.net/th/id/OIP.UByJszNqRDR1UC66tigdOgHaEK?r=0&pid=Api&P=0&h=180" alt="City">
+
+</div>
+
+<div class="hero-content">
+
+<h1>Welcome to Smart City Information System</h1>
+
+<p>
+
+Discover smart transportation, hospitals, education, tourism and public services in one place.
+
+</p>
+
+<a href="about.html" class="btn">Explore Now</a>
+
+</div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+<h2>Search City Services</h2>
+
+<input type="text"
+id="searchBox"
+placeholder="Search Hospital, School, Park..."
+onkeyup="searchService()">
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-container">
+
+<div class="card">
+
+<i class="fa-solid fa-bus"></i>
+
+<h3>Transportation</h3>
+
+<p>
+
+Bus Routes, Metro Information and Traffic Updates.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hospital"></i>
+
+<h3>Healthcare</h3>
+
+<p>
+
+Hospitals, Ambulance and Emergency Services.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-school"></i>
+
+<h3>Education</h3>
+
+<p>
+
+Schools, Colleges and Libraries.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-tree-city"></i>
+
+<h3>Tourism</h3>
+
+<p>
+
+Parks, Hotels and Tourist Places.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= LATEST NEWS ================= -->
+
+<section class="news">
+
+<h2>Latest News</h2>
+
+<div class="news-box">
+
+<p>
+
+✔ Smart Traffic System launched in the city.
+
+</p>
+
+<p>
+
+✔ New Metro Line Opening Soon.
+
+</p>
+
+<p>
+
+✔ Green Energy Initiative Started.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="footer"></footer>
+
+<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/footer.js"></script>
+
+</body>
+</html>
