@@ -3,194 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart City Information System</title>
-
+    <title> Smart City | Home</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
+
 <body>
 
-<!-- ================= NAVBAR ================= -->
-
+<!-- Header -->
 <header>
+    <div class="logo">
+        <span>🏙️</span>
+         <b>SMART CITY</b>
+    </div>
 
-    <nav class="navbar">
-
-        <div class="logo">
-            <i class="fa-solid fa-city"></i>
-            Smart City
-        </div>
-
-        <input type="checkbox" id="check">
-
-        <label for="check" class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </label>
-
-        <ul>
-
-            <li><a class="active" href="index.html">Home</a></li>
-
-            <li><a href="about.html">About</a></li>
-
-            <li><a href="services.html">Services</a></li>
-
-            <li><a href="gallery.html">Gallery</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
+    <nav id="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 </header>
 
-<!-- ================= HERO SECTION ================= -->
 
+<!-- Hero Section -->
 <section class="hero">
 
-<div class="slider">
+    <div class="hero-content">
+        <p class="small-title">WELCOME TO</p>
 
-<img id="slide" src="https://tse3.mm.bing.net/th/id/OIP.UByJszNqRDR1UC66tigdOgHaEK?r=0&pid=Api&P=0&h=180" alt="City">
+        <h1>
+            <span>SMART CITY</span>
+        </h1>
 
-</div>
+        <p>
+            Technology, innovation and sustainable development
+            for a better and smarter future.
+        </p>
 
-<div class="hero-content">
-
-<h1>Welcome to Smart City Information System</h1>
-
-<p>
-
-Discover smart transportation, hospitals, education, tourism and public services in one place.
-
-</p>
-
-<a href="about.html" class="btn">Explore Now</a>
-
-</div>
+        <div>
+            <a href="about.html" class="btn">Explore More</a>
+            <!-- <a href="projects.html" class="btn btn-light">Our Projects</a> -->
+        </div>
+    </div>
 
 </section>
 
-<!-- ================= SEARCH ================= -->
 
+<!-- Search -->
 <section class="search-section">
+    <h2>Explore Smart City</h2>
 
-<h2>Search City Services</h2>
+    <div class="search-box">
+        <input type="text" id="searchInput"
+               placeholder="Search services, projects, places...">
 
-<input type="text"
-id="searchBox"
-placeholder="Search Hospital, School, Park..."
-onkeyup="searchService()">
+        <button onclick="searchWebsite()">🔍 Search</button>
+    </div>
+
+    <p id="searchResult"></p>
+</section>
+
+
+<!-- About -->
+<section class="section">
+    <div class="section-title">
+        <p>ABOUT US</p>
+        <h2>Smart City Information</h2>
+    </div>
+
+    <div class="about-home">
+
+        <div class="about-image">
+            <div class="city-icon">🏙️</div>
+        </div>
+
+        <div class="about-text">
+            <h2>Building a Better city</h2>
+
+            <p>
+                A smart city uses modern technology and innovative
+                solutions to improve the quality of life of citizens.
+            </p>
+
+            <p>
+                Our Smart City Information portal provides information
+                about city development, smart services, transportation,
+                tourism, environment and public facilities.
+            </p>
+
+            <a href="about.html" class="btn">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Statistics -->
+<section class="stats">
+
+    <div class="stat">
+        <h2>25+</h2>
+        <p>Smart Projects</p>
+    </div>
+
+    <div class="stat">
+        <h2>15+</h2>
+        <p>Smart Services</p>
+    </div>
+
+    <div class="stat">
+        <h2>50K+</h2>
+        <p>Citizens Served</p>
+    </div>
+
+    <div class="stat">
+        <h2>24/7</h2>
+        <p>Digital Services</p>
+    </div>
 
 </section>
 
-<!-- ================= SERVICES ================= -->
 
-<section class="services">
+<!-- Services -->
+<section class="section">
 
-<h2>Our Services</h2>
+    <div class="section-title">
+        <p>SMART SERVICES</p>
+        <h2>Our City Services</h2>
+    </div>
 
-<div class="service-container">
+    <div class="cards">
 
-<div class="card">
+        <div class="card">
+            <div class="icon">💧</div>
+            <h3>Smart Water</h3>
+            <p>
+                Better water management and monitoring
+                for citizens.
+            </p>
+        </div>
 
-<i class="fa-solid fa-bus"></i>
+        <div class="card">
+            <div class="icon">🚌</div>
+            <h3>Smart Transport</h3>
+            <p>
+                Efficient transportation and intelligent
+                mobility solutions.
+            </p>
+        </div>
 
-<h3>Transportation</h3>
+        <div class="card">
+            <div class="icon">♻️</div>
+            <h3>Waste Management</h3>
+            <p>
+                Smart waste collection and cleaner
+                surroundings.
+            </p>
+        </div>
 
-<p>
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Smart Energy</h3>
+            <p>
+                Efficient energy management and
+                sustainable solutions.
+            </p>
+        </div>
 
-Bus Routes, Metro Information and Traffic Updates.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-hospital"></i>
-
-<h3>Healthcare</h3>
-
-<p>
-
-Hospitals, Ambulance and Emergency Services.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-school"></i>
-
-<h3>Education</h3>
-
-<p>
-
-Schools, Colleges and Libraries.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-tree-city"></i>
-
-<h3>Tourism</h3>
-
-<p>
-
-Parks, Hotels and Tourist Places.
-
-</p>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<!-- ================= LATEST NEWS ================= -->
 
-<section class="news">
+<!-- Projects
+<section class="project-section">
 
-<h2>Latest News</h2>
+    <div class="section-title">
+        <p>DEVELOPMENT</p>
+        <h2>Smart City Projects</h2>
+    </div>
 
-<div class="news-box">
+    <div class="project-grid">
 
-<p>
+        <div class="project">
+            <div class="project-img">🏛️</div>
+            <div class="project-content">
+                <span>HERITAGE</span>
+                <h3>Heritage Development</h3>
+                <p>
+                    Development and preservation of important
+                    heritage locations.
+                </p>
+                <a href="projects.html">View Project →</a>
+            </div>
+        </div>
 
-✔ Smart Traffic System launched in the city.
+        <div class="project">
+            <div class="project-img">🌳</div>
+            <div class="project-content">
+                <span>ENVIRONMENT</span>
+                <h3>Green City Project</h3>
+                <p>
+                    Creating greener public spaces and improving
+                    the urban environment.
+                </p>
+                <a href="projects.html">View Project →</a>
+            </div>
+        </div>
 
-</p>
+        <div class="project">
+            <div class="project-img">🚦</div>
+            <div class="project-content">
+                <span>TRANSPORT</span>
+                <h3>Smart Traffic System</h3>
+                <p>
+                    Technology-based traffic monitoring and
+                    management.
+                </p>
+                <a href="projects.html">View Project →</a>
+            </div>
+        </div>
 
-<p>
+    </div>
 
-✔ New Metro Line Opening Soon.
+</section> -->
 
-</p>
 
-<p>
+<!-- CTA -->
+<section class="cta">
 
-✔ Green Energy Initiative Started.
+    <h2>Let's Build a Smarter City Together</h2>
 
-</p>
+    <p>
+        Technology today creates a better tomorrow.
+    </p>
 
-</div>
+    <a href="contact.html" class="btn btn-light">
+        Contact Us
+    </a>
 
 </section>
 
-<!-- ================= FOOTER ================= -->
 
-<footer id="footer"></footer>
+<!-- Footer -->
+<footer>
 
-<script src="js/script.js"></script>
-<script src="js/slider.js"></script>
-<script src="js/footer.js"></script>
+    <div class="footer-container">
+
+        <div>
+            <h2>🏙️  SMART CITY</h2>
+            <p>
+                Smart solutions for a sustainable,
+                connected and better city.
+            </p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>📍 Smart City </p>
+            <p>📧 info@smartcity.com</p>
+            <p>📞 +91 98765 43210</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026  Smart City Information | All Rights Reserved
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
